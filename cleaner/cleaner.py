@@ -1,8 +1,8 @@
 import re
-linestring = open('servlets_questions.txt', 'r').read()
+linestring = open('custom_tags_questions.txt', 'r').read()
 result = ''.join(linestring)
 
-linestring = open('servlets_questions_respostas.txt', 'r').read()
+linestring = open('custom_tags_questions_respostas.txt', 'r').read()
 result_respostas = ''.join(linestring)
 rerespostas = re.compile ('<li>.*?</li>')
 arrayresultado = []
@@ -42,8 +42,9 @@ for item in result_requestions:
 	 total = total + 1
 resultado.append("</questoes>")
 
-myFile = open('result.xml', 'w')
+myFile = open('custom_tags_questions.xml', 'w')
 myFile.write(''.join(resultado))
 myFile.close()
+print total
 
 
