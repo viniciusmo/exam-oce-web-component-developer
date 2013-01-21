@@ -1,3 +1,3 @@
-Questoes para a certificacao  Java EE 6 Web Component Developer Certified
+Questôes para a certificação  Java EE 6 Web Component Developer Certified
 =================================
 
