@@ -1,4 +1,3 @@
-java-web-component-developer-mock
+Questoes para a certificacao  Java EE 6 Web Component Developer Certified
 =================================
 
-java-web-component-developer-mock
