@@ -1,0 +1,1326 @@
+{
+    "questoes": {
+        "questao": [
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)\n\n <%@ taglib prefix=\"my\" tagdir=\"/WEB-INF/tags\" %>\n    <html>\n      <body>\n        <my:header />\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)\n\n    <%@ taglib prefix=\"my\" tagdir=\"/WEB-INF/tags/\n\n    header.tag\" %>\n    <html>\n      <body>\n        <my:header />\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)\n\n    <%@ taglib prefix=\"my\" uri=\"/WEB-INF/tags\" %>\n    <html>\n      <body>\n        <my:header />\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)\n\n    <%@ taglib prefix=\"my\" uri=\"/WEB-INF/tags/\n\n    header.tag\" %>\n    <html>\n      <body>\n        <my:header />\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)\n\n    <%@ taglib prefix=\"my\" tagdir=\"/WEB-INF/tags/\"\n\n    uri=\"http://nikojava.wordpress.com\" %>\n    <html>\n      <body>\n        <my:header />\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)\n\n    <%@ taglib prefix=\"header\" tagdir=\"/WEB-INF/\n    tags\" %>\n    <html>\n      <body>\n        <header:header />\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)\n\n    <%@ taglib prefix=\"1\" tagdir=\"/WEB-INF/tags\" %>\n    <html>\n      <body>\n        <1:header />\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "Consider these files.\n\n    <%-- WEB-INF/tags/header.tag --%>\n    <h1>Hello !!</h1>\n\n    <%-- output.jsp --%>\n    <%@ taglib prefix=\"my\" tagdir=\"/WEB-INF/tags\" %>\n    <html>\n      <body>\n        <my:header></my:header>\n      </body>\n    </html>\n\n    Is the declaration and use of the JSP tag file valid? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Consider these files.\n\n    <%-- WEB-INF/tags/header.tag --%>\n    <h1>Hello ${Manoli}!!</h1>\n\n    <%-- output.jsp --%>\n    <%@ taglib prefix=\"my\" tagdir=\"/WEB-INF/tags\" %>\n    <html>\n      <body>\n        <my:header name=\"Manoli\"/>\n      </body>\n    </html>\n\n    Is the declaration and use of the JSP tag file valid? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Consider these files.\n\n    <%-- WEB-INF/tags/header.tag --%>\n    <h1>Hello ${name}!!</h1>\n\n    <%-- output.jsp --%>\n    <%@ taglib prefix=\"my\" tagdir=\"/WEB-INF/tags\" %>\n    <html>\n      <body>\n        <my:header name=\"Manoli\"/>\n      </body>\n    </html>\n\n    Is the declaration and use of the JSP tag file valid? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "Consider these files.\n\n    <%-- WEB-INF/tags/header.tag --%>\n    <%@ attribute name=\"name\" %>\n    <h1>Hello ${name}!!</h1>\n\n    <%-- output.jsp --%>\n    <%@ taglib prefix=\"my\" tagdir=\"/WEB-INF/tags\" %>\n    <html>\n      <body>\n        <my:header name=\"Manoli\"/>\n      </body>\n    </html>\n\n    Is the declaration and use of the JSP tag file valid? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "Consider these files.\n\n    <%-- WEB-INF/tags/header.tag --%>\n    <%@ attribute name=\"name\" %>\n    <h1>Hello ${name}!!</h1>\n\n    <%-- output.jsp --%>\n    <%@ taglib prefix=\"my\" tagdir=\"/WEB-INF/tags\" %>\n    <html>\n      <body>\n        <my:header name=\"Manoli\"></my:header>\n      </body>\n    </html>\n\n    Is the declaration and use of the JSP tag file valid? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "“This is .”",
+                            "id": "a"
+                        },
+                        {
+                            "name": "“This is Sparta.”",
+                            "id": "b"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "c"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Consider these files.\n\n    <%-- WEB-INF/tags/simple.tag --%>\n    <%@ attribute name=\"city\" required=\"false\" %>\n    <%@ tag pageEncoding=\"utf-8\"%>\n    This is ${city}.\n\n    <%-- output.jsp --%>\n    <%@ taglib prefix=\"ayo\" tagdir=\"/WEB-INF/tags\" %>\n    <html>\n      <body>\n        <ayo:simple city=\"Sparta\"/>\n      </body>\n    </html>\n\n    What is the output? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "“This is .”",
+                            "id": "a"
+                        },
+                        {
+                            "name": "“This is Sparta.”",
+                            "id": "b"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "c"
+                        }
+                    ],
+                    "corretas": "c"
+                },
+                "pergunta": "Consider these files.\n\n    <%-- WEB-INF/tags/simple.tag --%>\n    <%@ attribute name=\"city\" required=\"true\" %>\n    <%@ tag pageEncoding=\"utf-8\"%>\n    This is ${city}.\n\n    <%-- output.jsp --%>\n    <%@ taglib prefix=\"ayo\" tagdir=\"/WEB-INF/tags\" %>\n    <html>\n      <body>\n        <ayo:simple/>\n      </body>\n    </html>\n\n    What is the output? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "“This is .”",
+                            "id": "a"
+                        },
+                        {
+                            "name": "“This is Sparta.”",
+                            "id": "b"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "c"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Consider these files.\n\n    <%-- WEB-INF/tags/simple.tag --%>\n    <%@ attribute name=\"city\" %>\n    <%@ tag pageEncoding=\"utf-8\"%>\n    This is ${city}.\n\n    <%-- output.jsp --%>\n    <%@ taglib prefix=\"ayo\" tagdir=\"/WEB-INF/tags\" %>\n    <% request.setAttribute(\"city\", \"Sparta\");%>\n    <html>\n      <body>\n        <ayo:simple city=\"${city}\"/>\n      </body>\n    </html>\n\n    What is the output? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "“This is .”",
+                            "id": "a"
+                        },
+                        {
+                            "name": "“This is Sparta.”",
+                            "id": "b"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "c"
+                        }
+                    ],
+                    "corretas": "c"
+                },
+                "pergunta": "Consider these files.\n\n    <%-- WEB-INF/tags/simple.tag --%>\n    <%@ attribute name=\"city\" rtexprvalue=\"false\" %>\n    <%@ tag pageEncoding=\"utf-8\"%>\n    This is ${city}.\n\n    <%-- output.jsp --%>\n    <%@ taglib prefix=\"ayo\" tagdir=\"/WEB-INF/tags\" %>\n    <% request.setAttribute(\"city\", \"Sparta\");%>\n    <html>\n      <body>\n        <ayo:simple city=\"${city}\"/>\n      </body>\n    </html>\n\n    What is the output? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "“This is true.”",
+                            "id": "a"
+                        },
+                        {
+                            "name": "“This is false.”",
+                            "id": "b"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "c"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Consider these files.\n\n    <%-- WEB-INF/tags/simple.tag --%>\n    <%@ attribute name=\"city\" rtexprvalue=\"true\" %>\n    <%@ tag pageEncoding=\"utf-8\"%>\n    This is ${city}.\n\n    <%-- output.jsp --%>\n    <%@ taglib prefix=\"ayo\" tagdir=\"/WEB-INF/tags\" %>\n    <html>\n      <body>\n        <ayo:simple city=\"${1 ge 10}\"/>\n      </body>\n    </html>\n\n    What is the output? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "“This is true.”",
+                            "id": "a"
+                        },
+                        {
+                            "name": "“This is false.”",
+                            "id": "b"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "c"
+                        }
+                    ],
+                    "corretas": "c"
+                },
+                "pergunta": "Consider these files.\n\n    <%-- WEB-INF/tags/simple.tag --%>\n    <%@ attribute name=\"city\" rtexprvalue=\"true\" %>\n    <%@ tag pageEncoding=\"utf-8\"%>\n    This is ${city}.\n\n    <%-- output.jsp --%>\n    <%@ taglib prefix=\"ayo\" tagdir=\"/WEB-INF/tags\" %>\n    <html>\n      <body>\n        <ayo:simple capital=\"${1 ge 10}\"/>\n      </body>\n    </html>\n\n    What is the output? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "“Start End”",
+                            "id": "a"
+                        },
+                        {
+                            "name": "“Start Middle End”",
+                            "id": "b"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "c"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Consider these files.\n\n    <%-- WEB-INF/tags/body.tag --%>\n    Start <jsp:doBody /> End\n\n    <%-- output.jsp --%>\n    <%@ taglib prefix=\"ayo\" tagdir=\"/WEB-INF/tags\" %>\n    <html>\n      <body>\n        <ayo:body>Middle</ayo:body>\n      </body>\n    </html>\n\n    What is the output? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "“Start End”",
+                            "id": "a"
+                        },
+                        {
+                            "name": "“Start Middle End”",
+                            "id": "b"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "c"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Consider these files.\n\n    <%-- WEB-INF/tags/body.tag --%>\n    <%@ tag body-content=\"scriptless\" %>\n    Start <jsp:doBody /> End\n\n    <%-- output.jsp --%>\n    <%@ taglib prefix=\"ayo\" tagdir=\"/WEB-INF/tags\" %>\n    <% request.setAttribute(\"position\", \"Middle\"); %>\n    <html>\n      <body>\n        <ayo:body>${position}</ayo:body>\n      </body>\n    </html>\n\n    What is the output? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "“Start End”",
+                            "id": "a"
+                        },
+                        {
+                            "name": "“Start Middle End”",
+                            "id": "b"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "c"
+                        }
+                    ],
+                    "corretas": "c"
+                },
+                "pergunta": "Consider these files.\n\n    <%-- WEB-INF/tags/body.tag --%>\n    <%@ tag body-content=\"tagdependent\" %>\n    Start <jsp:doBody /> End\n\n    <%-- output.jsp --%>\n    <%@ taglib prefix=\"ayo\" tagdir=\"/WEB-INF/tags\" %>\n    <% request.setAttribute(\"position\", \"Middle\"); %>\n    <html>\n      <body>\n        <ayo:body><%= request.getAttribute(\"position\") %></ayo:body>\n      </body>\n    </html>\n\n    What is the output? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "true",
+                            "id": "a"
+                        },
+                        {
+                            "name": "false",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "SimpleTagSupport is a class that belongs to package javax.servlet.jsp.tagext. (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "true",
+                            "id": "a"
+                        },
+                        {
+                            "name": "false",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "SimpleTagSupport IS-A SimpleTag. (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "true",
+                            "id": "a"
+                        },
+                        {
+                            "name": "false",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "SimpleTagSupport IS-A JspTag. (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "One.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "It depends on the container.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "How many times is the doTag() method of SimpleTagSupport called on each tag invocation? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "public void doTag() throws ServletException",
+                            "id": "a"
+                        },
+                        {
+                            "name": "public void doTag() throws IOException, JspException",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Consider class SimpleTagSupport. What is the signature of its method doTag? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Calls the setJspBody(JspFragment).",
+                            "id": "a"
+                        },
+                        {
+                            "name": "Calls the no-arg constructor.",
+                            "id": "b"
+                        },
+                        {
+                            "name": "Calls the doTag() method.",
+                            "id": "c"
+                        },
+                        {
+                            "name": "Calls the setParent(JspTag).",
+                            "id": "d"
+                        },
+                        {
+                            "name": "Calls the attribute setters.",
+                            "id": "e"
+                        },
+                        {
+                            "name": "Calls the setJspContext(JspContext).",
+                            "id": "f"
+                        }
+                    ],
+                    "corretas": "b,f,d,e,a,c"
+                },
+                "pergunta": "Consider a simple tag handler that is nested, has attributes and a body. Here are the actions taken by the Container when this tag is invoked. Place them in the correct order starting from what happens first."
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "Assuming all imports are correct, will this code compile successfully? (1 correct answer)\n\n    public class Test extends SimpleTagSupport {\n    public void doTag() throws IOException, JspException {\n        getJspContext().getOut().println(\"A simple tag handler!!\");\n    }\n    }"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "Assuming all imports are correct, will this code compile successfully? (1 correct answer)\n\n    public class Test extends SimpleTagSupport {\n    public void doTag() throws IOException, JspException {\n        getJspContext().getOut().append(\"A simple tag handler!!\");\n    }\n    }"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Assuming all imports are correct, will this code compile successfully? (1 correct answer)\n\n    public class Test extends SimpleTagSupport {\n    public void doTag() throws IOException, JspException {\n        getJspContext().getOut().format(\"A simple tag handler!!\");\n    }\n    }"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "Assuming all imports are correct, will this code compile successfully? (1 correct answer)\n\n    public class Test extends SimpleTagSupport {\n    public void doTag() throws IOException {\n        getJspContext().getOut().print(\"A simple tag handler!!\");\n    }\n    }"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Assuming all imports are correct, will this code compile successfully? (1 correct answer)\n\n    public class Test extends SimpleTagSupport {\n    public void doTag() throws Exception {\n        getJspContext().getOut().print(\"A simple tag handler!!\");\n    }\n    }"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Is this code a valid simple tag handler? (1 correct answer)\n\n    public class Test extends SimpleTagSupport {\n    public Test(String name) {\n    }\n    public void doTag() throws IOException, JspException {\n        getJspContext().getOut().println(\"A simple tag handler!!\");\n    }\n    }"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Test IS-A SimpleTagSupport in package simpletaghandlers. Is it correctly declared in a TLD? (1 correct answer)\n\n    <tag>\n      <tag-class>simpletaghandlers.Test</tag-class>\n      <body-content>empty</body-content>\n    </tag>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Test IS-A SimpleTagSupport in package simpletaghandlers. Is it correctly declared in a TLD? (1 correct answer)\n\n    <tag>\n      <name>simple</name>\n      <body-content>empty</body-content>\n    </tag>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Test IS-A SimpleTagSupport in package simpletaghandlers. Is it correctly declared in a TLD? (1 correct answer)\n\n    <tag>\n      <name>simple</name>\n      <tag-class>Test</tag-class>\n      <body-content>empty</body-content>\n    </tag>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Test IS-A SimpleTagSupport in package simpletaghandlers. Is it correctly declared in a TLD? (1 correct answer)\n\n    <tag>\n      <name>simple</name>\n      <tag-class>simpletaghandlers.Test</tag-class>\n    </tag>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "Test IS-A SimpleTagSupport in package simpletaghandlers. Is it correctly declared in a TLD? (1 correct answer)\n\n    <tag>\n      <name>simple</name>\n      <tag-class>simpletaghandlers.Test</tag-class>\n      <body-content>empty</body-content>\n    </tag>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "mytaglib.tld is a valid TLD with <uri>/webapp/mytaglib</uri> and a simple tag handler with <name>simple</name>. Is this a valid use of the tag handler? (1 correct answer)\n\n    <%@ taglib tagdir=\"/WEB-INF/\" prefix=\"show\"%>\n    <html>\n      <body>\n        <show:simple />\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "mytaglib.tld is a valid TLD with <uri>/webapp/mytaglib</uri> and a simple tag handler with <name>simple</name>. Is this a valid use of the tag handler? (1 correct answer)\n\n    <%@ taglib tagdir=\"/WEB-INF/mytaglib.tld\" prefix=\"show\"%>\n    <html>\n      <body>\n        <show:simple />\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "mytaglib.tld is a valid TLD with <uri>/webapp/mytaglib</uri> and a simple tag handler with <name>simple</name>. Is this a valid use of the tag handler? (1 correct answer)\n\n    <%@ taglib tagdir=\"/webapp/mytaglib\" prefix=\"show\"%>\n    <html>\n      <body>\n        <show:simple />\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "mytaglib.tld is a valid TLD with <uri>/webapp/mytaglib</uri> and a simple tag handler with <name>simple</name>. Is this a valid use of the tag handler? (1 correct answer)\n\n    <%@ taglib uri=\"/webapp/mytaglib\" prefix=\"show\"%>\n    <html>\n      <body>\n        <show:simple />\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "(Before)(After)",
+                            "id": "a"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)\n\n    public class Repeater extends SimpleTagSupport {\n      public void doTag() throws JspException, IOException {\n        getJspBody().invoke(null);\n      }\n    }\n\n    <%@ taglib uri=\"/webapp/mytaglib\" prefix=\"do\" %>\n    <html>\n      <body>\n        (Before)\n        <do:repeater />\n        (After)\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "(Before)(After)",
+                            "id": "a"
+                        },
+                        {
+                            "name": "(Before)Surprise(After)",
+                            "id": "b"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "c"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)\n\n    public class Repeater extends SimpleTagSupport {\n      public void doTag() throws JspException, IOException {\n        if (getJspBody() == null) {\n          getJspContext().getOut().print(\"Surprise\");\n        } else {\n          getJspBody().invoke(null);\n        }\n      }\n    }\n\n    <%@ taglib uri=\"/webapp/mytaglib\" prefix=\"do\" %>\n    <html>\n      <body>\n        (Before)\n        <do:repeater></do:repeater>\n        (After)\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "(Before)(After)",
+                            "id": "a"
+                        },
+                        {
+                            "name": "(Before)Surprise(After)",
+                            "id": "b"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "c"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)\n\n    public class Repeater extends SimpleTagSupport {\n      public void doTag() throws JspException, IOException {\n        getJspBody().invoke(null);\n      }\n    }\n\n    <%@ taglib uri=\"/webapp/mytaglib\" prefix=\"do\" %>\n    <html>\n      <body>\n        (Before)\n        <do:repeater>Surprise</do:repeater>\n        (After)\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "(Before)(After)",
+                            "id": "a"
+                        },
+                        {
+                            "name": "(Before)Surprise(After)",
+                            "id": "b"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "c"
+                        }
+                    ],
+                    "corretas": "c"
+                },
+                "pergunta": "Assume that everything is declared properly and the TLD specifies <body-content>empty</body-content>. What is the output of the JSP? (1 correct answer)\n\n    public class Repeater extends SimpleTagSupport {\n      public void doTag() throws JspException, IOException {\n        getJspBody().invoke(null);\n      }\n    }\n\n    <%@ taglib uri=\"/webapp/mytaglib\" prefix=\"do\" %>\n    <html>\n      <body>\n        (Before)\n        <do:repeater>Surprise</do:repeater>\n        (After)\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "(Before)(After)",
+                            "id": "a"
+                        },
+                        {
+                            "name": "(Before)Surprise(After)",
+                            "id": "b"
+                        },
+                        {
+                            "name": "(Before)SurpriseSurprise(After)",
+                            "id": "c"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "d"
+                        }
+                    ],
+                    "corretas": "c"
+                },
+                "pergunta": "Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)\n\n    public class Repeater extends SimpleTagSupport {\n      public void doTag() throws JspException, IOException {\n        getJspBody().invoke(null);\n        getJspBody().invoke(null);\n      }\n    }\n\n    <%@ taglib uri=\"/webapp/mytaglib\" prefix=\"do\" %>\n    <html>\n      <body>\n        (Before)\n        <do:repeater>Surprise</do:repeater>\n        (After)\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "(Before)(After)",
+                            "id": "a"
+                        },
+                        {
+                            "name": "(Before)here(After)",
+                            "id": "b"
+                        },
+                        {
+                            "name": "(Before)${here}(After)",
+                            "id": "c"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "d"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)\n\n    public class Repeater extends SimpleTagSupport {\n      public void doTag() throws JspException, IOException {\n        getJspBody().invoke(null);\n      }\n    }\n\n    <%@ taglib uri=\"/webapp/mytaglib\" prefix=\"do\" %>\n    <html>\n      <body>\n        (Before)\n        <do:repeater>${here}</do:repeater>\n        (After)\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "(Before)(After)",
+                            "id": "a"
+                        },
+                        {
+                            "name": "(Before)Surprise(After)",
+                            "id": "b"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "c"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)\n\n    public class Repeater extends SimpleTagSupport {\n      public void doTag() throws JspException, IOException {\n        getJspBody().invoke(null);\n      }\n    }\n\n    <%@ taglib uri=\"/webapp/mytaglib\" prefix=\"do\" %>\n    <% request.setAttribute(\"here\", \"Surprise\"); %>\n    <html>\n      <body>\n        (Before)\n        <do:repeater>${here}</do:repeater>\n        (After)\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "(Before)(After)",
+                            "id": "a"
+                        },
+                        {
+                            "name": "(Before)Surprise(After)",
+                            "id": "b"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "c"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)\n\n    public class Repeater extends SimpleTagSupport {\n      public void doTag() throws JspException, IOException {\n        getJspContext().setAttribute(\"here\", \"Surprise\");\n        getJspBody().invoke(null);\n      }\n    }\n\n    <%@ taglib uri=\"/webapp/mytaglib\" prefix=\"do\" %>\n    <html>\n      <body>\n        (Before)\n        <do:repeater>${here}</do:repeater>\n        (After)\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "(Before)(After)",
+                            "id": "a"
+                        },
+                        {
+                            "name": "(Before)null is a big surprise!(After)",
+                            "id": "b"
+                        },
+                        {
+                            "name": "(Before)NetBeans 6.5 is a big surprise!(After)",
+                            "id": "c"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "d"
+                        }
+                    ],
+                    "corretas": "d"
+                },
+                "pergunta": "Consider this simple tag handler\n\n    public class Repeater extends SimpleTagSupport {\n      private String surprise;\n      public void doTag() throws JspException, IOException {\n        getJspContext().getOut().print(surprise);\n        getJspContext().getOut().print(\" is a big surprise!\");\n      }\n    }\n\n    that is properly declared in a TLD with the following attribute.\n\n    <attribute>\n      <name>surprise</name>\n      <required>false</required>\n      <rtexprvalue>false</rtexprvalue>\n    </attribute>\n\n    What is the output of this JSP? (1 correct answer)\n\n    <%@ taglib uri=\"/webapp/mytaglib\" prefix=\"do\" %>\n    <html>\n      <body>\n        (Before)\n        <do:repeater surprise=\"NetBeans 6.5\" />\n        (After)\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "(Before)(After)",
+                            "id": "a"
+                        },
+                        {
+                            "name": "(Before)null is a big surprise!(After)",
+                            "id": "b"
+                        },
+                        {
+                            "name": "(Before)NetBeans 6.5 is a big surprise!(After)",
+                            "id": "c"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "d"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Consider this simple tag handler\n\n    public class Repeater extends SimpleTagSupport {\n      private String surprise;\n      public void doTag() throws JspException, IOException {\n        getJspContext().getOut().print(surprise);\n        getJspContext().getOut().print(\" is a big surprise!\");\n      }\n      public void setSurprise(String surprise) {\n      }\n    }\n\n    that is properly declared in a TLD with the following attribute.\n\n    <attribute>\n      <name>surprise</name>\n      <required>false</required>\n      <rtexprvalue>false</rtexprvalue>\n    </attribute>\n\n    What is the output of this JSP? (1 correct answer)\n\n    <%@ taglib uri=\"/webapp/mytaglib\" prefix=\"do\" %>\n    <html>\n      <body>\n        (Before)\n        <do:repeater surprise=\"NetBeans 6.5\" />\n        (After)\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "(Before)(After)",
+                            "id": "a"
+                        },
+                        {
+                            "name": "(Before)null is a big surprise!(After)",
+                            "id": "b"
+                        },
+                        {
+                            "name": "(Before)NetBeans 6.5 is a big surprise!(After)",
+                            "id": "c"
+                        },
+                        {
+                            "name": "An exception occurs at runtime.",
+                            "id": "d"
+                        }
+                    ],
+                    "corretas": "c"
+                },
+                "pergunta": "Consider this simple tag handler\n\n    public class Repeater extends SimpleTagSupport {\n      private String surprise;\n      public void doTag() throws JspException, IOException {\n        getJspContext().getOut().print(surprise);\n        getJspContext().getOut().print(\" is a big surprise!\");\n      }\n      public void setSurprise(String surprise) {\n        this.surprise = surprise;\n      ;}\n    }\n\n    that is properly declared in a TLD with the following attribute.\n\n    <attribute>\n      <name>surprise</name>\n      <required>false</required>\n      <rtexprvalue>false</rtexprvalue>\n    </attribute>\n\n    What is the output of this JSP? (1 correct answer)\n\n    <%@ taglib uri=\"/webapp/mytaglib\" prefix=\"do\" %>\n    <html>\n      <body>\n        (Before)\n        <do:repeater surprise=\"NetBeans 6.5\" />\n        (After)\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "true",
+                            "id": "a"
+                        },
+                        {
+                            "name": "false",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "TagSupport is a class that belongs to package javax.servlet.jsp.tagext. (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "true",
+                            "id": "a"
+                        },
+                        {
+                            "name": "false",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "TagSupport IS-A IterationTag. (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "true",
+                            "id": "a"
+                        },
+                        {
+                            "name": "false",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "TagSupport IS-A Tag. (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "true",
+                            "id": "a"
+                        },
+                        {
+                            "name": "false",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "TagSupport IS-A JspTag. (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "public int doStartTag() throws JspException",
+                            "id": "a"
+                        },
+                        {
+                            "name": "public void doStartTag() throws JspException",
+                            "id": "b"
+                        },
+                        {
+                            "name": "public int doStartTag() throws JspException, IOException",
+                            "id": "c"
+                        },
+                        {
+                            "name": "public void doStartTag() throws JspException, IOException",
+                            "id": "d"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "Consider class TagSupport. What is the signature of its method doStartTag? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "public int doEndTag() throws JspException",
+                            "id": "a"
+                        },
+                        {
+                            "name": "public int doEndTag(String) throws JspException",
+                            "id": "b"
+                        },
+                        {
+                            "name": "public int doEndTag(Writer) throws JspException, IOException",
+                            "id": "c"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "Consider class TagSupport. What is the signature of its method doEndTag? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "int doAfterBody() throws JspException",
+                            "id": "a"
+                        },
+                        {
+                            "name": "void doAfterBody() throws JspException",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "Consider interface IterationTag. What is the signature of its method doAfterBody? (1 correct answer)"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "true",
+                            "id": "a"
+                        },
+                        {
+                            "name": "false",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "The following are all fields of interface Tag. (1 correct answer)\n          ⇒ SKIP_BODY\n          ⇒ SKIP_PAGE\n          ⇒ EVAL_PAGE\n          ⇒ EVAL_BODY_INCLUDE"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "true",
+                            "id": "a"
+                        },
+                        {
+                            "name": "false",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "The following is a field of interface IterationTag. (1 correct answer)\n          ⇒ EVAL_BODY_AGAIN"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "Is this a valid classic tag handler? (1 correct answer)\n\n    public class Classic extends TagSupport {\n    }"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "Is this a valid classic tag handler? (1 correct answer)\n\n    public class Classic extends TagSupport {\n        public Classic() {\n        }\n    }"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Is this a valid classic tag handler? (1 correct answer)\n\n    public class Classic extends TagSupport {\n        private Classic() {\n        }\n    }"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "Yes.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "No.",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "Is this a valid classic tag handler? (1 correct answer)\n\n    public class Classic extends TagSupport {\n        public Classic() {\n        }\n        public Classic(String construct) {\n        }\n    }"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "(Before)(After)",
+                            "id": "a"
+                        },
+                        {
+                            "name": "(Before)My Body(After)",
+                            "id": "b"
+                        }
+                    ],
+                    "corretas": "a"
+                },
+                "pergunta": "Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)\n\n    public class Classic extends TagSupport {\n      public int doStartTag() {\n        return SKIP_BODY;\n      }\n    }\n\n    <%@ taglib uri=\"correct\" prefix=\"yes\" %>\n    <html>\n      <body>\n        (Before)\n        <yes:classic>My Body</yes:classic>\n        (After)\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "(Before)(After)",
+                            "id": "a"
+                        },
+                        {
+                            "name": "(Before)",
+                            "id": "b"
+                        },
+                        {
+                            "name": "(Before)My Body(After)",
+                            "id": "c"
+                        },
+                        {
+                            "name": "(Before)My Body",
+                            "id": "d"
+                        }
+                    ],
+                    "corretas": "c"
+                },
+                "pergunta": "Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)\n\n    public class Classic extends TagSupport {\n      public int doStartTag() {\n        return SKIP_PAGE;\n      }\n    }\n\n    <%@ taglib uri=\"correct\" prefix=\"yes\" %>\n    <html>\n      <body>\n        (Before)\n        <yes:classic>My Body</yes:classic>\n        (After)\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "(Before)(After)",
+                            "id": "a"
+                        },
+                        {
+                            "name": "(Before)",
+                            "id": "b"
+                        },
+                        {
+                            "name": "(Before)My Body(After)",
+                            "id": "c"
+                        },
+                        {
+                            "name": "(Before)My Body",
+                            "id": "d"
+                        }
+                    ],
+                    "corretas": "c"
+                },
+                "pergunta": "Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)\n\n    public class Classic extends TagSupport {\n      public int doStartTag() {\n        return EVAL_BODY_INCLUDE;\n      }\n    }\n\n    <%@ taglib uri=\"correct\" prefix=\"yes\" %>\n    <html>\n      <body>\n        (Before)\n        <yes:classic>My Body</yes:classic>\n        (After)\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "(Before)(After)",
+                            "id": "a"
+                        },
+                        {
+                            "name": "(Before)Hello!!(After)",
+                            "id": "b"
+                        },
+                        {
+                            "name": "(Before)My Body(After)",
+                            "id": "c"
+                        },
+                        {
+                            "name": "(Before)Hello!!My Body(After)",
+                            "id": "d"
+                        }
+                    ],
+                    "corretas": "b"
+                },
+                "pergunta": "Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)\n\n    public class Classic extends TagSupport {\n      public int doStartTag() {\n        try {\n          pageContext.getOut().print(\"Hello!!\");\n        } catch (Exception e) {\n          e.printStackTrace();\n        }\n        return SKIP_BODY;\n      }\n    }\n\n    <%@ taglib uri=\"correct\" prefix=\"yes\" %>\n    <html>\n      <body>\n        (Before)\n        <yes:classic>My Body</yes:classic>\n        (After)\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "(Before)(After)",
+                            "id": "a"
+                        },
+                        {
+                            "name": "(Before)Hello!!(After)",
+                            "id": "b"
+                        },
+                        {
+                            "name": "(Before)My Body(After)",
+                            "id": "c"
+                        },
+                        {
+                            "name": "(Before)Hello!!My Body(After)",
+                            "id": "d"
+                        }
+                    ],
+                    "corretas": "d"
+                },
+                "pergunta": "Assume that everything is declared properly and the TLD specifies <body-content>scriptless</body-content>. What is the output of the JSP? (1 correct answer)\n\n    public class Classic extends TagSupport {\n      public int doStartTag() {\n        try {\n          pageContext.getOut().print(\"Hello!!\");\n        } catch (Exception e) {\n          e.printStackTrace();\n        }\n        return EVAL_BODY_INCLUDE;\n      }\n    }\n\n    <%@ taglib uri=\"correct\" prefix=\"yes\" %>\n    <html>\n      <body>\n        (Before)\n        <yes:classic>My Body</yes:classic>\n        (After)\n      </body>\n    </html>"
+            },
+            {
+                "alternativas": {
+                    "alternativa": [
+                        {
+                            "name": "We should override the doEndTag() method.",
+                            "id": "a"
+                        },
+                        {
+                            "name": "The value returned by doStartTag() is not correct.",
+                            "id": "b"
+                        },
+                        {
+                            "name": "The doAfterBody() should not have a while loop inside.",
+                            "id": "c"
+                        },
+                        {
+                            "name": "The instance variables should be initialized in the doStartTag() method.",
+                            "id": "d"
+                        },
+                        {
+                            "name": "The doStartTag() and doAfterBody() methods should throw a JspException.",
+                            "id": "e"
+                        }
+                    ],
+                    "corretas": "d"
+                },
+                "pergunta": "This classic tag handler is properly declared in a TLD.\n\n    public class Classic extends TagSupport {\n      private List<String> movies = new ArrayList<String>();\n      private int current = 0;\n      public ClassicRepeater() {\n        movies.add(\"Heat\");\n        movies.add(\"Pocahontas\");\n        movies.add(\"Lawrence of Arabia\");\n      }\n      public int doStartTag() {\n        setAttribute();\n        return EVAL_BODY_INCLUDE;\n      }\n      public int doAfterBody() {\n        while (current < movies.size()) {\n          setAttribute();\n          return EVAL_BODY_AGAIN;\n        }\n        return SKIP_BODY;        \n      }\n      private void setAttribute() {\n        pageContext.setAttribute(\"movie\", movies.get(current));                \n        current++;\n      }\n    }\n\n    Many testers complain that when they visit or repeatedly hit the refresh button on the following jsp, they sometimes get an IndexOutOfBoundsException. What’s wrong with the above implementation? (1 correct answer)\n\n    <%@ taglib uri=\"correct\" prefix=\"yes\" %>\n    <html>\n      <body>\n        <ol>\n        <yes:classic><li>${movie}</li></yes:classic>\n        </ol>\n      </body>\n    </html>"
+            }
+        ]
+    }
+}

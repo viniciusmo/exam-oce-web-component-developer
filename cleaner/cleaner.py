@@ -26,10 +26,13 @@ for item in result_requestions:
 	 resultado.append("<alternativas>")
 	 
 	 for item_alternativa in result_alternativas:
-	     resultado.append("<alternativa id='"+alternativa+"'><![CDATA[")
+	     resultado.append("<alternativa>")
+	     resultado.append("<name><![CDATA[")
 	     resultado.append(item_alternativa.replace('111','').replace('999',''))
+	     resultado.append("]]></name>")
+	     resultado.append("<id>"+alternativa+"</id>")
 	     alternativa = chr(ord(alternativa) + 1)
-	     resultado.append("]]></alternativa>")
+	     resultado.append("</alternativa>")
 	 resultado.append ("<corretas>")
 	 resultado.append (arrayresultado[total].replace(" ",""))
 	 resultado.append ("</corretas>")	 

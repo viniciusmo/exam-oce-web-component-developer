@@ -1,0 +1,48 @@
+<html>
+ <head>
+     <script src="jquery.min.js"></script>
+     
+     <script type="text/javascript">
+             var questoes =  new Array()
+         
+             function getQuestions(){ 
+						  $.ajax({
+							type: "GET",
+							url: "http://localhost/custom_tags_questions.xml",
+							dataType: "xml",
+							success: function(xml) {
+								iquestoes = 0;
+								$(xml).find('questoes').find('questao').each(function(){
+										var questao  =  new Object()
+										questao.alternativas = new Array();
+										i = 0;
+										$(this).find('alternativas').find('alternativa').each(function (){
+											  var alternativa =  new Object();
+											  alternativa.id = $(this).find('id').text();
+											  alternativa.name=   $(this).find('name').text();
+											  questao.alternativas[i] = alternativa;
+											  i++;
+										});
+										questao.pergunta = $(this).find('pergunta').text();
+										questao.corretas = $(this).find('corretas').text();
+										questoes[iquestoes]= questao;
+										iquestoes++;
+								});
+								
+								for (var i = 0 ;  i < questoes.length ;i++){
+								    var text = questoes[i].pergunta;
+								    $("textarea[name='questao']").val(text);				    
+								}					   
+						}});
+				 }
+				 	 
+				 getQuestions();
+     </script>
+ </head>
+ <body>
+      
+     <textarea name="questao" id="questao" rows="70" cols="70">
+     </textarea>
+ </body>
+ 
+</html>
