@@ -33,12 +33,13 @@
 				 }
 
 				 function init(){
-				 		var text = questoes[20].pergunta;
+				 		var text = questoes[contQuestion].pergunta;
 
 						$("#questao").text(text);
-						for (var j = 0; j < questoes[20].alternativas.length; j++) {
-								$("#alternativas").append("<input  type='checkbox' value='"+questoes[20].alternativas[j].id+"'>"+questoes[20].alternativas[j].name+"</input></br>");
+						for (var j = 0; j < questoes[contQuestion].alternativas.length; j++) {
+								$("#alternativas").append("<input id='alternativa"+j+"' type='checkbox' value='"+questoes[contQuestion].alternativas[j].id+"'>"+questoes[contQuestion].alternativas[j].name+"</input></br>");
 						}
+						contQuestion = contQuestion + 1;
 
 				 }
 				 function nextQuestion(){
@@ -46,8 +47,9 @@
 						$("#questao").text(text);
 						$("#alternativas").html("");
 						for (var j = 0; j < questoes[contQuestion].alternativas.length; j++) {
-								$("#alternativas").append("<input  type='checkbox' value='"+questoes[contQuestion].alternativas[j].id+"'>"+questoes[contQuestion].alternativas[j].name+"</input></br>");
+								$("#alternativas").append("<input id='alternativa"+j+"' type='checkbox' value='"+questoes[contQuestion].alternativas[j].id+"'>"+questoes[contQuestion].alternativas[j].name+"</input></br>");
 						}
+
 					 contQuestion = contQuestion + 1;
 				 }
 				 getQuestions();
