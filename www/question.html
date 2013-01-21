@@ -3,12 +3,12 @@
      <script src="jquery.min.js"></script>
      
      <script type="text/javascript">
-             var questoes =  new Array()
-         
+             var questoes =  new Array();
+             var contQuestion = 0;
              function getQuestions(){ 
 						  $.ajax({
 							type: "GET",
-							url: "http://localhost/custom_tags_questions.xml",
+							url: "http://localhost:8888/www/custom_tags_questions.xml",
 							dataType: "xml",
 							success: function(xml) {
 								iquestoes = 0;
@@ -28,21 +28,41 @@
 										questoes[iquestoes]= questao;
 										iquestoes++;
 								});
-								
-								for (var i = 0 ;  i < questoes.length ;i++){
-								    var text = questoes[i].pergunta;
-								    $("textarea[name='questao']").val(text);				    
-								}					   
+							 init();					   
 						}});
 				 }
-				 	 
+
+				 function init(){
+				 		var text = questoes[20].pergunta;
+
+						$("#questao").text(text);
+						for (var j = 0; j < questoes[20].alternativas.length; j++) {
+								$("#alternativas").append("<input  type='checkbox' value='"+questoes[20].alternativas[j].id+"'>"+questoes[20].alternativas[j].name+"</input></br>");
+						}
+
+				 }
+				 function nextQuestion(){
+				 		var text = questoes[contQuestion].pergunta;
+						$("#questao").text(text);
+						$("#alternativas").html("");
+						for (var j = 0; j < questoes[contQuestion].alternativas.length; j++) {
+								$("#alternativas").append("<input  type='checkbox' value='"+questoes[contQuestion].alternativas[j].id+"'>"+questoes[contQuestion].alternativas[j].name+"</input></br>");
+						}
+					 contQuestion = contQuestion + 1;
+				 }
 				 getQuestions();
      </script>
  </head>
- <body>
-      
-     <textarea name="questao" id="questao" rows="70" cols="70">
-     </textarea>
+ <body >
+     <div id="conteudo" style="background-color:#EEEEEE;overflow: scroll; width:100%;white-space: nowrap;overflow:scroll;zoom:1; ">
+     	    <h1>Question</h1>
+		    <pre id="questao">
+		    </pre>
+     </div>
+      <div id="alternativas">
+
+      </div>
+      <input  value="OK" onclick="nextQuestion()" type="button"/>
  </body>
  
 </html>
