@@ -1,7 +1,6 @@
 <html>
  <head>
      <script src="jquery.min.js"></script>
-     
      <script type="text/javascript">
              var questoes =  new Array();
              var contQuestion = 0;
@@ -43,14 +42,35 @@
 
 				 }
 				 function nextQuestion(){
-				 		var text = questoes[contQuestion].pergunta;
+				 		
+
+						var corretas = questoes[contQuestion].corretas.split(',');
+                        var errado = 0;
+						for (var i = 0 ; i  < questoes[contQuestion].alternativas.length ; i++) {
+							var checked = $("#alternativa"+i).is(':checked'); 
+							if (checked) {
+								var value = $("#alternativa"+i).val();
+								if ($.inArray(value, corretas) == -1){
+									errado = 1;
+									break;
+								}
+							}else{
+								var value = $("#alternativa"+i).val();
+								if ( $.inArray(value, corretas) >= 0 ){
+									errado = 1;
+									break;
+								}
+							}
+						}
+                     if (errado) {alert("vc errou")}else {alert("vc acertou")};
+						
+					 contQuestion = contQuestion + 1;
+					 var text = questoes[contQuestion].pergunta;
 						$("#questao").text(text);
 						$("#alternativas").html("");
 						for (var j = 0; j < questoes[contQuestion].alternativas.length; j++) {
 								$("#alternativas").append("<input id='alternativa"+j+"' type='checkbox' value='"+questoes[contQuestion].alternativas[j].id+"'>"+questoes[contQuestion].alternativas[j].name+"</input></br>");
 						}
-
-					 contQuestion = contQuestion + 1;
 				 }
 				 getQuestions();
      </script>
@@ -64,6 +84,7 @@
       <div id="alternativas">
 
       </div>
+      <br/>
       <input  value="OK" onclick="nextQuestion()" type="button"/>
  </body>
  
