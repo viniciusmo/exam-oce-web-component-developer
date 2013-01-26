@@ -1,91 +1,20 @@
 <html>
  <head>
-     <script src="jquery.min.js"></script>
-     <script type="text/javascript">
-             var questoes =  new Array();
-             var contQuestion = 0;
-             function getQuestions(){ 
-						  $.ajax({
-							type: "GET",
-							url: "http://localhost:8888/www/custom_tags_questions.xml",
-							dataType: "xml",
-							success: function(xml) {
-								iquestoes = 0;
-								$(xml).find('questoes').find('questao').each(function(){
-										var questao  =  new Object()
-										questao.alternativas = new Array();
-										i = 0;
-										$(this).find('alternativas').find('alternativa').each(function (){
-											  var alternativa =  new Object();
-											  alternativa.id = $(this).find('id').text();
-											  alternativa.name=   $(this).find('name').text();
-											  questao.alternativas[i] = alternativa;
-											  i++;
-										});
-										questao.pergunta = $(this).find('pergunta').text();
-										questao.corretas = $(this).find('corretas').text();
-										questoes[iquestoes]= questao;
-										iquestoes++;
-								});
-							 init();					   
-						}});
-				 }
-
-				 function init(){
-				 		var text = questoes[contQuestion].pergunta;
-
-						$("#questao").text(text);
-						for (var j = 0; j < questoes[contQuestion].alternativas.length; j++) {
-								$("#alternativas").append("<input id='alternativa"+j+"' type='checkbox' value='"+questoes[contQuestion].alternativas[j].id+"'>"+questoes[contQuestion].alternativas[j].name+"</input></br>");
-						}
-						contQuestion = contQuestion + 1;
-
-				 }
-				 function nextQuestion(){
-				 		
-
-						var corretas = questoes[contQuestion].corretas.split(',');
-                        var errado = 0;
-						for (var i = 0 ; i  < questoes[contQuestion].alternativas.length ; i++) {
-							var checked = $("#alternativa"+i).is(':checked'); 
-							if (checked) {
-								var value = $("#alternativa"+i).val();
-								if ($.inArray(value, corretas) == -1){
-									errado = 1;
-									break;
-								}
-							}else{
-								var value = $("#alternativa"+i).val();
-								if ( $.inArray(value, corretas) >= 0 ){
-									errado = 1;
-									break;
-								}
-							}
-						}
-                     if (errado) {alert("vc errou")}else {alert("vc acertou")};
-						
-					 contQuestion = contQuestion + 1;
-					 var text = questoes[contQuestion].pergunta;
-						$("#questao").text(text);
-						$("#alternativas").html("");
-						for (var j = 0; j < questoes[contQuestion].alternativas.length; j++) {
-								$("#alternativas").append("<input id='alternativa"+j+"' type='checkbox' value='"+questoes[contQuestion].alternativas[j].id+"'>"+questoes[contQuestion].alternativas[j].name+"</input></br>");
-						}
-				 }
-				 getQuestions();
-     </script>
+     <script type="text/javascript" src="js/config.js" ></script>
+     <script type="text/javascript" src="js/jquery.min.js" ></script>
+     <script type="text/javascript" src="js/question.js" ></script>
  </head>
  <body >
-     <div id="conteudo" style="background-color:#EEEEEE;overflow: scroll; width:100%;white-space: nowrap;overflow:scroll;zoom:1; ">
+     <div id="content" style="background-color:#EEEEEE;overflow: scroll; width:100%;white-space: nowrap;overflow:scroll;zoom:1; ">
      	    <h1>Question</h1>
-		    <pre id="questao">
+		    <pre id="question">
 		    </pre>
      </div>
-      <div id="alternativas">
+      <div id="alternatives">
 
       </div>
       <br/>
-      <input  value="OK" onclick="nextQuestion()" type="button"/>
+      <input  value="OK" onclick="controllerQuestion.accountingScore()" type="button"/>
  </body>
  
 </html>

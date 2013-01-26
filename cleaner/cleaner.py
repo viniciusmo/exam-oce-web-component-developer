@@ -14,36 +14,36 @@ for item_resposta in resultado_respostas:
      
 requestions = re.compile ("question.+?999\n\n", re.DOTALL)
 result_requestions = requestions.findall(result)
-realternativas = re.compile ('111.+?999', re.DOTALL)
+realternatives = re.compile ('111.+?999', re.DOTALL)
 
 total = 0
 resultado = []
-resultado.append("<questoes>")
+resultado.append("<questions>")
 for item in result_requestions:
-	 result_alternativas = realternativas.findall(item)
-	 alternativa = 'a'
-	 resultado.append("<questao>")
-	 resultado.append("<alternativas>")
+	 result_alternatives = realternatives.findall(item)
+	 alternative = 'a'
+	 resultado.append("<question>")
+	 resultado.append("<alternatives>")
 	 
-	 for item_alternativa in result_alternativas:
-	     resultado.append("<alternativa>")
+	 for item_alternative in result_alternatives:
+	     resultado.append("<alternative>")
 	     resultado.append("<name><![CDATA[")
-	     resultado.append(item_alternativa.replace('111','').replace('999',''))
+	     resultado.append(item_alternative.replace('111','').replace('999',''))
 	     resultado.append("]]></name>")
-	     resultado.append("<id>"+alternativa+"</id>")
-	     alternativa = chr(ord(alternativa) + 1)
-	     resultado.append("</alternativa>")
-	 resultado.append ("<corretas>")
+	     resultado.append("<id>"+alternative+"</id>")
+	     alternative = chr(ord(alternative) + 1)
+	     resultado.append("</alternative>")
+	 resultado.append ("<corrects>")
 	 resultado.append (arrayresultado[total].replace(" ",""))
-	 resultado.append ("</corretas>")	 
-	 resultado.append("</alternativas>")
+	 resultado.append ("</corrects>")	 
+	 resultado.append("</alternatives>")
 	 item = re.sub('111.+?999',"",item)
-	 resultado.append("<pergunta><![CDATA[")
+	 resultado.append("<question_name><![CDATA[")
 	 resultado.append(item.replace("question.",""))
-	 resultado.append("]]></pergunta>")
-	 resultado.append("</questao>")
+	 resultado.append("]]></question_name>")
+	 resultado.append("</question>")
 	 total = total + 1
-resultado.append("</questoes>")
+resultado.append("</questions>")
 
 myFile = open('custom_tags_questions.xml', 'w')
 myFile.write(''.join(resultado))
