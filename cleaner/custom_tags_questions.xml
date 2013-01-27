@@ -1,4 +1,4 @@
-<questions><question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)
+<question><alternatives><alternative><name><![CDATA[ Yes.]]></name><id>a</id></alternative><alternative><name><![CDATA[ No.]]></name><id>b</id></alternative><corrects>a</corrects></alternatives><question_name><![CDATA[ Is this a valid use of header.tag, a JSP tag file that is located in WEB-INF/tags? (1 correct answer)
 
     <%@ taglib prefix="my" tagdir="/WEB-INF/tags" %>
     <html>
@@ -1083,4 +1083,4 @@
         
         
 
-]]></question_name></question></questions>
+]]></question_name></question>

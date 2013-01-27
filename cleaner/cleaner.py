@@ -1,8 +1,9 @@
 import re
-linestring = open('custom_tags_questions.txt', 'r').read()
+
+linestring = open('el_questions.txt', 'r').read()
 result = ''.join(linestring)
 
-linestring = open('custom_tags_questions_respostas.txt', 'r').read()
+linestring = open('el_questions_respostas.txt', 'r').read()
 result_respostas = ''.join(linestring)
 rerespostas = re.compile ('<li>.*?</li>')
 arrayresultado = []
@@ -18,7 +19,6 @@ realternatives = re.compile ('111.+?999', re.DOTALL)
 
 total = 0
 resultado = []
-resultado.append("<questions>")
 for item in result_requestions:
 	 result_alternatives = realternatives.findall(item)
 	 alternative = 'a'
@@ -43,9 +43,8 @@ for item in result_requestions:
 	 resultado.append("]]></question_name>")
 	 resultado.append("</question>")
 	 total = total + 1
-resultado.append("</questions>")
 
-myFile = open('custom_tags_questions.xml', 'w')
+myFile = open('el_questions.xml', 'w')
 myFile.write(''.join(resultado))
 myFile.close()
 print total
