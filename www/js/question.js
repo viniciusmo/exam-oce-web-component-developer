@@ -31,8 +31,6 @@ ControllerQuestion.prototype.shuffle = function (arr) {
     );
 };
 
-
-
 ControllerQuestion.prototype.addQuestion = function (question) {
     $("#question").text("");
     $("#alternatives").text("");
@@ -49,6 +47,7 @@ ControllerQuestion.prototype.nextQuestion = function () {
     var atual = this.atualQuestion;
     var question = this.questions[atual];
     this.addQuestion(question);
+    this.atualQuestion += 1;
 };
 
 ControllerQuestion.prototype.validAlternative = function (corrects, alternative,i) {
@@ -73,13 +72,10 @@ ControllerQuestion.prototype.validAlternative = function (corrects, alternative,
 ControllerQuestion.prototype.accountingScore =  function() {
     var correct  = this.isCorrectQuestion();
     (correct == true) ?this.result.corrects += 1:this.result.incorrects += 1;  
-    alert(this.questions[this.atualQuestion].corrects)
-    this.nextQuestion();
     (this.atualQuestion >= 10) ? this.clear():
     $('#total').text(this.result.getPercentageResult());
     $('#corrects').text(this.result.corrects);
     $('#incorrects').text(this.result.incorrects);
-    this.atualQuestion += 1;
 };
 
 ControllerQuestion.prototype.isCorrectQuestion =  function() {
@@ -89,7 +85,7 @@ ControllerQuestion.prototype.isCorrectQuestion =  function() {
     for (var i = 0; i < question.alternatives.length; i++) {
         var alternative = question.alternatives[i];
         correct = this.validAlternative(corrects, alternative,i);
-        if (correct) break;
+        if (!correct) break;
     }
     return correct;
 };
@@ -99,8 +95,6 @@ ControllerQuestion.prototype.clear =  function() {
     this.result.clear();
     this.atualQuestion  = 0;
 };
-
-
 
 var ParserQuestions = function () {
 	this.onFinish = "";
@@ -146,5 +140,5 @@ var onFinish =  function (questions){
    controllerQuestion = new ControllerQuestion(questions,resultQuestion);
    controllerQuestion.nextQuestion();
 }
-parserQuestions.getQuestions (onFinish);
+parserQuestions.getQuestions(onFinish);
 
