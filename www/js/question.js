@@ -49,6 +49,9 @@ ControllerQuestion.prototype.nextQuestion = function () {
     var question = this.questions[atual];
     this.addQuestion(question);
     this.atualQuestion += 1;
+    $("#btnNextQuestion").hide();
+    $("#btnOk").show();
+
 };
 
 ControllerQuestion.prototype.validAlternative = function (corrects, alternative,i) {
@@ -74,10 +77,12 @@ ControllerQuestion.prototype.accountingScore =  function() {
     var correct  = this.isCorrectQuestion();
     (correct == true) ?this.result.corrects += 1:this.result.incorrects += 1;
     if (!correct){
-       alert(this.questions[this.atualQuestion-1].corrects)  
-       alert(this.questions[this.atualQuestion-1].questionName)  
+       alert("Incorrect!  correct is : "+this.questions[this.atualQuestion-1].corrects)  
+       $("#btnOk").hide();
+       $("#btnNextQuestion").show();
     }else{
        alert("correct")
+       this.nextQuestion();
     }
     $('#total').text(this.result.getPercentageResult());
     $('#corrects').text(this.result.corrects);

@@ -1,9 +1,9 @@
 import re
 
-linestring = open('el_questions.txt', 'r').read()
+linestring = open('servlets_questions.txt', 'r').read()
 result = ''.join(linestring)
 
-linestring = open('el_questions_respostas.txt', 'r').read()
+linestring = open('servlets_questions_respostas.txt', 'r').read()
 result_respostas = ''.join(linestring)
 rerespostas = re.compile ('<li>.*?</li>')
 arrayresultado = []
@@ -44,7 +44,7 @@ for item in result_requestions:
 	 resultado.append("</question>")
 	 total = total + 1
 
-myFile = open('el_questions.xml', 'w')
+myFile = open('servlets_questions.xml', 'w')
 myFile.write(''.join(resultado))
 myFile.close()
 print total
