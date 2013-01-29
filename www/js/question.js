@@ -8,6 +8,7 @@ var ResultQuestion  =  function (){
 
 
 ResultQuestion.prototype.getPercentageResult = function () {
+   this.total = this.corrects + this.incorrects;
    return (this.corrects*100)/this.total;
 };
 
@@ -65,21 +66,26 @@ ControllerQuestion.prototype.validAlternative = function (corrects, alternative,
             correct = false;
         }
     }
-    if (countChecked == 0) return false;
+    console.info ("validAlternative is " + correct)
     return correct;
 };
 
 ControllerQuestion.prototype.accountingScore =  function() {
     var correct  = this.isCorrectQuestion();
-    (correct == true) ?this.result.corrects += 1:this.result.incorrects += 1;  
-    (this.atualQuestion >= 10) ? this.clear():
+    (correct == true) ?this.result.corrects += 1:this.result.incorrects += 1;
+    if (!correct){
+       alert(this.questions[this.atualQuestion-1].corrects)  
+       alert(this.questions[this.atualQuestion-1].questionName)  
+    }else{
+       alert("correct")
+    }
     $('#total').text(this.result.getPercentageResult());
     $('#corrects').text(this.result.corrects);
     $('#incorrects').text(this.result.incorrects);
 };
 
 ControllerQuestion.prototype.isCorrectQuestion =  function() {
-    var question = this.questions[this.atualQuestion];
+    var question = this.questions[this.atualQuestion-1];
     var  correct = true;
     var corrects = question.corrects.split(',');
     for (var i = 0; i < question.alternatives.length; i++) {
