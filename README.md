@@ -12,8 +12,8 @@ Exam Simulator
 
   [2]: https://raw.github.com/viniciusmo/octopress/master/source/images/blog/opensource/mock2.png 
 
-
-Demo : [Clique aqui](http://viniciusmo.github.io/exam/exam-oce-web-component-developer/www/mock.html "Clique aqui")
+## Demo
+Demo : [Click here](http://viniciusmo.github.io/exam/exam-oce-web-component-developer/www/mock.html "Click here")
 
 ## License
 
